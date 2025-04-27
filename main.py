@@ -18,8 +18,8 @@ app = FastAPI(
 
 @app.get("/")
 async def root():
-    # return it to docs/
-    return RedirectResponse(url="/docs")
+    return RedirectResponse(url="https://cura-agent-api-production.up.railway.app/docs")
+
     
 # Create all tables automatically
 Base.metadata.create_all(bind=engine)
