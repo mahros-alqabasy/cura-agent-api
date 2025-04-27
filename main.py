@@ -1,11 +1,11 @@
 from fastapi import FastAPI
-from app.api.v1.api_v1 import api_router
-from app.core.config import settings
-from app.db.session import engine
-from app.db.base_class import Base
-from app.db.models import user
+from api.v1.api_v1 import api_router
+from core.config import settings
+from db.session import engine
+from db.base_class import Base
+from db.models import user
 
-from app.db.models import User, Role, Permission
+from db.models import User, Role, Permission
 
 
 from fastapi.responses import RedirectResponse

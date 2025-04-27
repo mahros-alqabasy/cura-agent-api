@@ -7,16 +7,16 @@ async def healthcheck():
     return {"status": "ok"}
 
 from fastapi import APIRouter
-from app.api.v1.endpoints.auth import register
-from app.api.v1.endpoints.auth import register, login
-from app.api.v1.endpoints.auth import register, login, me
+from api.v1.endpoints.auth import register
+from api.v1.endpoints.auth import register, login
+from api.v1.endpoints.auth import register, login, me
 
-from app.api.v1.endpoints.auth import register, login, me, logout
-from app.api.v1.endpoints.roles import roles_crud
-from app.api.v1.endpoints.roles import assign_permissions
-from app.api.v1.endpoints.permissions import permissions_crud
-from app.api.v1.endpoints.users import users_crud
-from app.api.v1.endpoints.patients import patients_crud
+from api.v1.endpoints.auth import register, login, me, logout
+from api.v1.endpoints.roles import roles_crud
+from api.v1.endpoints.roles import assign_permissions
+from api.v1.endpoints.permissions import permissions_crud
+from api.v1.endpoints.users import users_crud
+from api.v1.endpoints.patients import patients_crud
 
 api_router = APIRouter()
 

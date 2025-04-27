@@ -1,2 +1,2 @@
-from app.db.base_class import Base
-from app.db.models import User, Role, Permission, RolePermission
+from db.base_class import Base
+from db.models import User, Role, Permission, RolePermission

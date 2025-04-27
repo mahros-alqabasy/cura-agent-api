@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.db.session import SessionLocal
-from app.api.v1.endpoints.auth.guards import get_current_user
-from app.db.models.role import Role
-from app.db.models.permission import Permission
-from app.db.models.role_permission import RolePermission
+from db.session import SessionLocal
+from api.v1.endpoints.auth.guards import get_current_user
+from db.models.role import Role
+from db.models.permission import Permission
+from db.models.role_permission import RolePermission
 
 router = APIRouter()
 

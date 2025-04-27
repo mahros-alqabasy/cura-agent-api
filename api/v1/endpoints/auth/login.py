@@ -1,13 +1,13 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.db.session import SessionLocal
-from app.schemas.token import Token
-from app.schemas.user import UserLogin
-from app.db.models.user import User
-from app.db.models.role import Role
-from app.db.models.permission import Permission
-from app.db.models.role_permission import RolePermission
-from app.core.security import verify_password, create_access_token
+from db.session import SessionLocal
+from schemas.token import Token
+from schemas.user import UserLogin
+from db.models.user import User
+from db.models.role import Role
+from db.models.permission import Permission
+from db.models.role_permission import RolePermission
+from core.security import verify_password, create_access_token
 from datetime import timedelta
 
 router = APIRouter()

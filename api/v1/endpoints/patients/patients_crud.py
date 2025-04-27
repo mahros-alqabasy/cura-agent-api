@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.db.session import SessionLocal
-from app.api.v1.endpoints.auth.guards import get_current_user
-from app.db.models.patient import Patient
-from app.schemas.patient import PatientCreate, PatientUpdate, PatientOut
+from db.session import SessionLocal
+from api.v1.endpoints.auth.guards import get_current_user
+from db.models.patient import Patient
+from schemas.patient import PatientCreate, PatientUpdate, PatientOut
 
 router = APIRouter()
 
